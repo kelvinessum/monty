@@ -48,5 +48,6 @@ void pall(stack_t **stack, unsigned int line_number);
 void free_stack(stack_t *stack);
 int is_integer(char *str);
 void execute_instruction(char *opcode, stack_t **stack, unsigned int line_number, char *arg);
+void pint(stack_t **stack, unsigned int line_number);
 
 #endif /* MONTY_H */

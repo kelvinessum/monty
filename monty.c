@@ -11,13 +11,14 @@ void execute_instruction(char *opcode, stack_t **stack, unsigned int line_number
 {
 	instruction_t instructions[] = {
 		{"pall", pall},
+		{"pint", pint},
 		{NULL, NULL}
 	};
 	int i = 0;
 
 	if (strcmp(opcode, "push") == 0)
 	{
-		/* Handle push separately since it requires an additional argument */
+
 		push(stack, line_number, arg);
 		return;
 	}
